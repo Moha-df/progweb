@@ -1,5 +1,6 @@
 .body{
     display: grid;
+    grid-template-rows: auto;
 }
 
 .header{
@@ -8,8 +9,21 @@
     display: flex;
     justify-content: space-between;
     font-size:xx-large;
-    background-color:rgb(233, 233, 233);
+    margin-left: 5%;
+    margin-right: 5%;
+    animation: slideInHeader 2s ease forwards;
 }   
+
+@keyframes slideInHeader {
+    0% {
+        transform: translateY(-100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 .RightHeader{   
     display:flex;
@@ -17,12 +31,28 @@
     flex-grow: 0.3;
 }
 
+
+nav {
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease; 
+    border-radius: 5px; 
+    padding: 0 0.5em; 
+    height: 1.2em;
+}
+
+nav:hover {
+    background-color: #f2f2f2;
+    border-color: #ccc; 
+    color: #333; 
+    cursor: pointer; 
+}
+
+
 .pdpPage{
+    margin: 10vh 0vh;
     height: 50vh;
     display: flex;
     justify-content: center;
-    background-color: rgb(255, 220, 220);
-
 }
 
 .pp{
@@ -30,8 +60,23 @@
     justify-content: center;
     height: 100%;
     width: 40%;
-    background-color: rgb(67, 135, 194);
 }
+
+.rpp .txtrpp {
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    animation: blbl 3s ease-in-out forwards;
+}
+
+@keyframes blbl {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .rpp{
     display: flex;
     justify-content: center;
@@ -39,10 +84,39 @@
     height: 100%;
     width: 40%;
     margin-left: 0;
-    background-color: rgb(255, 190, 250);
+}
+
+.hi{
+    font-size: large;
+    text-align: center;
+    opacity: 80%;
+    margin-bottom: 2%;
+}
+.monblaz{
+    font-size: xxx-large;
+    text-align: center;
+    margin: 0%;
+}
+.student{
+    text-align: center;
+    font-size: x-large;
+    opacity: 85%;
 }
 
 .luffypp{
     padding: 8%;
     border-radius: 50%;
+    object-fit: cover; 
+    animation: slideAndFade 2s ease forwards;
+}
+
+@keyframes slideAndFade {
+    0% {
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0); 
+        opacity: 1;
+    }
 }
