@@ -1,1 +1,48 @@
-/* vide */
+.body{
+    display: grid;
+}
+
+.header{
+    height: 5vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size:xx-large;
+    background-color:rgb(233, 233, 233);
+}   
+
+.RightHeader{   
+    display:flex;
+    justify-content: space-around;
+    flex-grow: 0.3;
+}
+
+.pdpPage{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 220, 220);
+
+}
+
+.pp{
+    display: flex;  
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    background-color: rgb(67, 135, 194);
+}
+.rpp{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    margin-left: 0;
+    background-color: rgb(255, 190, 250);
+}
+
+.luffypp{
+    padding: 8%;
+    border-radius: 50%;
+}
