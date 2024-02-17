@@ -1,3 +1,5 @@
+//                         Curseur
+
 const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorOutline = document.querySelector("[data-cursor-outline]");
 
@@ -19,3 +21,49 @@ window.addEventListener("mousemove", function(e){
         top: `${posY}px`
     }, { duration: 200, fill: "forwards"});
 });
+
+
+
+
+//                         Theme sombre theme claire
+
+const btn = document.querySelector("#Moon");
+let isDarkTheme = false;
+
+window.addEventListener('load', function() {
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme == 'dark') {
+        isDarkTheme = true;
+        changeStyles();
+    }
+});
+
+
+btn.addEventListener("click", function() {
+    isDarkTheme = !isDarkTheme;
+
+    if (isDarkTheme) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+    changeStyles();
+});
+
+function changeStyles() {
+    const link = document.querySelector('link[href="css/black.css"]');
+    const moonImg = document.getElementById('Moon');
+    if (isDarkTheme && !link) {
+        const newLink = document.createElement('link');
+        newLink.rel = 'stylesheet';
+        newLink.type = 'text/css';
+        newLink.href = 'css/black.css';
+        document.head.appendChild(newLink);
+
+        moonImg.src = 'img/whitetem.png';
+        moonImg.alt = 'blackthem';
+    } else if (!isDarkTheme && link) {
+        link.remove();
+        moonImg.src = 'img/darktem.png';
+    }
+}

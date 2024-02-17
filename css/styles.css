@@ -1,24 +1,27 @@
-.body{
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+.body {
+    font-family: 'Lato', sans-serif;
     display: grid;
     grid-template-rows: auto;
     cursor: none;
-
 }
 
-.cursor-dot{
+.cursor-dot {
     width: 10px;
     height: 10px;
     background-color: rgb(0, 0, 0);
 }
 
-.cursor-outline{
+.cursor-outline {
     width: 50px;
     height: 50px;
     border: 2px solid hsla(0, 0%, 0%, 0.5);
 }
 
 .cursor-dot,
-.cursor-outline{
+.cursor-outline {
     position: fixed;
     top: 0;
     left: 0;
@@ -28,20 +31,21 @@
     pointer-events: none;
 }
 
-.header{
+.header {
     height: 5vh;
     padding: 50px;
+    padding-right: 0;
     display: flex;
     justify-content: space-between;
-    font-size:xx-large;
+    font-size: xx-large;
     margin-left: 5%;
     margin-right: 5%;
     animation: slideInHeader 2s ease forwards;
-}   
+}
 
 @keyframes slideInHeader {
     0% {
-        transform: translateY(-100%); 
+        transform: translateY(-100%);
         opacity: 0;
     }
     100% {
@@ -50,8 +54,8 @@
     }
 }
 
-.RightHeader{   
-    display:flex;
+.RightHeader {
+    display: flex;
     justify-content: space-around;
     flex-grow: 0.3;
 }
@@ -59,49 +63,64 @@
 
 nav {
     border-bottom: 2px solid transparent;
-    transition: border-color 0.3s ease; 
-    border-radius: 5px; 
-    padding: 0 0.5em; 
+    transition: border-color 0.3s ease;
+    border-radius: 5px;
+    padding: 0 0.5em;
     height: 1.2em;
 }
 
 nav:hover {
     background-color: #f2f2f2;
-    border-color: #ccc; 
-    color: #333; 
+    border-color: #ccc;
+    color: #333;
 }
 
+.blackthem{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+}
 
-.pdpPage{
+.Moon:hover {
+    transform: translateY(-2px);
+    border-bottom: 2px solid;
+    border-color: #ccc;
+}
+
+.Moon {
+  padding-bottom: 5px;
+}
+
+.pdpPage {
     margin: 10vh 0vh;
     height: 50vh;
     display: flex;
     justify-content: center;
 }
 
-.pp{
-    display: flex;  
+.pp {
+    display: flex;
     justify-content: center;
     height: 100%;
     width: 40%;
 }
 
 .rpp .txtrpp {
-    opacity: 0; 
-    transition: opacity 0.5s ease; 
+    opacity: 0;
+    transition: opacity 0.5s ease;
     animation: blbl 3s ease-in-out forwards;
 }
 
 @keyframes blbl {
     from {
-        opacity: 0; 
+        opacity: 0;
     }
     to {
         opacity: 1;
     }
 }
 
-.rpp{
+.rpp {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -110,34 +129,34 @@ nav:hover {
     margin-left: 0;
 }
 
-.hi{
+.hi {
     font-size: large;
     text-align: center;
     opacity: 80%;
     margin-bottom: 2%;
 }
-.monblaz{
+.monblaz {
     font-size: xxx-large;
     text-align: center;
     margin: 0%;
 }
-.student{
+.student {
     text-align: center;
     font-size: x-large;
     opacity: 85%;
 }
 
-.buttonrpp{
+.buttonrpp {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 2vh 15vh;
+    margin: 2% 0;
 }
 
 .cv,
 .contactInfo {
-    padding: 0.5em 0.5em; 
+    margin: 0 2vw;
+    padding: 0.5em 0.5em;
     font-size: x-large;
     opacity: 85%;
     border: 2px solid #4e4e4e;
@@ -152,14 +171,13 @@ nav:hover {
     color: #fff; /* Change la couleur du texte au survol */
 }
 
-.svgrpp{
+.svgrpp {
     display: flex;
     justify-content: center;
-    justify-content: space-between;
-    margin: 1vh 25vh;
 }
 
-.svglogo{
+.svglogo {
+    margin: 0 3vw;
     fill: rgb(54, 54, 54);
     animation: blbl 3s ease-in-out forwards;
     transition: transform 0.2s ease;
@@ -169,10 +187,10 @@ nav:hover {
     transform: translateY(-5px); /* Déplace légèrement vers le haut au survol */
 }
 
-.luffypp{
+.luffypp {
     padding: 8%;
     border-radius: 50%;
-    object-fit: cover; 
+    object-fit: cover;
     animation: slideAndFade 2s ease forwards;
 }
 
@@ -182,7 +200,25 @@ nav:hover {
         opacity: 0;
     }
     100% {
-        transform: translate(0); 
+        transform: translate(0);
         opacity: 1;
     }
+}
+
+.AboutSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20vh 0;
+}
+
+.AboutSectionTxt1 {
+    margin: 0.5vh;
+    font-size: x-large;
+    color: rgb(65, 65, 65);
+}
+.AboutSectionTxt2 {
+    margin: 0;
+    font-size: xxx-large;
 }

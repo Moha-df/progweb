@@ -1,0 +1,76 @@
+.body {
+    background-color: #121212;
+}
+
+.cursor-dot {
+    background-color: rgb(170, 170, 170);
+}
+
+.cursor-outline {
+
+    border: 2px solid hsla(0, 0%, 77%, 0.5);
+}
+
+
+
+nav {
+    color: #ffffff;
+}
+
+
+nav:hover {
+    background-color: #1d1d1d;
+    border-color: #ccc;
+    color: #ffffff;
+}
+
+.pdpPage {
+    background-color: #121212;
+}
+
+.rpp {
+    background-color: #121212;
+}
+
+.hi {
+    color: #ffffff;
+}
+
+.monblaz {
+    color: #ffffff;
+}
+
+.student {
+    color: #ffffff;
+}
+
+.cv,
+.contactInfo {
+    color: #ffffff;
+    border-color: #444444;
+}
+
+.cv:hover,
+.contactInfo:hover {
+    background-color: #222222;
+}
+
+.svglogo {
+    fill: #ffffff;
+}
+
+.luffypp {
+    border: 5px solid #121212;
+}
+
+.AboutSection {
+    background-color: #121212;
+}
+
+.AboutSectionTxt1 {
+    color: #adadad;
+}
+
+.AboutSectionTxt2 {
+    color: #ffffff;
+}
