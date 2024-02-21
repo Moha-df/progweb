@@ -340,7 +340,7 @@ nav:hover {
 /*                                          Footer section                                     */
 
 .footer{
-    border-top: 2px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
     display: flex;
     flex-direction: column;
     margin-top: 20vh;
@@ -370,6 +370,28 @@ nav:hover {
 
 /*                                          Contact html page                                     */
 
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .ContactTitleSection{
     margin-top: 5vh;
     display: flex;
@@ -381,14 +403,16 @@ nav:hover {
     font-size: 4.5em;
     font-weight: 400;
     margin: 0;
-
+    animation: slideInFromLeft 2s ease
 }
 .ContactTitleSectionTxt{
     margin: 0;
     font-size: x-large;
     font-weight: 400;
     font-style: italic;
+    animation: slideInFromRight 3s ease;
 }
+
 
 
 
@@ -416,4 +440,7 @@ nav:hover {
     margin-top: 10vh;
     background-color: rgb(238, 238, 238);
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
