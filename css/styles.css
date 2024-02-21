@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+html{
+    cursor: none;
+}
 
 .body {
     font-family: 'Lato', sans-serif;
     display: grid;
     grid-template-rows: auto;
-    cursor: none;
     margin: 0;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    cursor: none;
 }
 
 /*                                          Scroll animation section                                          */
@@ -362,4 +366,54 @@ nav:hover {
     color: #000000;
     transform:translateY(-1px);
     border-bottom: #000000 solid 1px;
+}
+
+/*                                          Contact html page                                     */
+
+.ContactTitleSection{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContactTitleSectionTitle{
+    font-size: 4.5em;
+    font-weight: 400;
+    margin: 0;
+
+}
+.ContactTitleSectionTxt{
+    margin: 0;
+    font-size: x-large;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+.custom-shape-divider-top-1708524440 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1708524440 svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 137px;
+}
+
+.custom-shape-divider-top-1708524440 .shape-fill {
+    fill: #ffffff;
+}
+
+.Contact2Part{
+    margin-top: 10vh;
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
 }
