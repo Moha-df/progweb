@@ -6,6 +6,12 @@
     display: grid;
     grid-template-rows: auto;
     cursor: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /*                                          Scroll animation section                                          */
@@ -243,7 +249,7 @@ nav:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20vh 0;
+    margin: 30vh 0;
 }
 
 .AboutSectionTxt1 {
@@ -328,3 +334,32 @@ nav:hover {
 }
 
 /*                                          Footer section                                     */
+
+.footer{
+    border-top: 2px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.footerTop{
+    margin-top: 1vh;
+    margin-left: 10vw;
+    color: #777777;
+}
+
+.footerBottom{
+    margin-left: 10vw;
+    display: flex;
+    justify-content:space-evenly;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    color: #2c2c2c;
+}
+
+.footerTxt:hover{
+    color: #000000;
+    transform:translateY(-1px);
+    border-bottom: #000000 solid 1px;
+}

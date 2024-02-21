@@ -86,3 +86,19 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+//                         Smooth Scroll
+
+function scrollToMiddle(sectionId) {
+    
+    var section = document.getElementById(sectionId);
+    var sectionTop = section.offsetTop;
+    var sectionHeight = section.clientHeight;
+    var windowHeight = window.innerHeight;
+    var middleOfSection = sectionTop + (sectionHeight / 2) - (windowHeight / 2);
+
+    window.scrollTo({
+        top: middleOfSection,
+        behavior: 'smooth'
+    });
+}
