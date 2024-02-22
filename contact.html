@@ -14,7 +14,7 @@
     <div class="cursor-outline" data-cursor-outline></div>
     <header class="header">
         <nav class="MonNom">
-            De Franceschi Mohamed 
+            <a href="index.html">De Franceschi Mohamed </a>
         </nav>
         <nav class="About" onclick="scrollToMiddle('about-section')">
             About 
@@ -47,25 +47,28 @@
         </div>
         <section class="Contact2Part">
             <div class="Contact2PartL">
-                <form action="">
-                    <h4 class="ContactLTxt">
+                <form class="form" action="">
+                    <label for="inputName" class="ContactLTxt">
                         Full name*
-                    </h4>
+                    </label>
                     <div class="input-box">
-                        <input type="text" placeholder="Full name" required>
+                        <input class="inputName" type="text" placeholder="Enter your full name ...  " required>
                     </div>
-                    <h4 class="ContactLTxt">
+                    <label for="inputEmail" class="ContactLTxt">
                         Email Adress*
-                    </h4>
+                    </label>
                     <div class="input-box">
-                        <input type="email" placeholder="E-mail" required>
+                        <input class="inputEmail" type="email" placeholder="Enter your e-mail ..." required>
                     </div>
-                    <h4 class="ContactLTxt">
+                    <label for="inputMsg" class="ContactLTxt">
                         Message*
-                    </h4>
+                    </label>
                     <div class="input-box">
-                        <input type="text" placeholder="Message" required>
+                        <textarea class="inputeMsg" type="text" placeholder="Type your message here ..." required></textarea>
                     </div>
+                    <button class="btn">
+                        Send
+                    </button>
                 </form>
                 
             </div>

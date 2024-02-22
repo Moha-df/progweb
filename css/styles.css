@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 html{
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     cursor: none;
 }
 
@@ -16,8 +16,8 @@ input{
     display: grid;
     grid-template-columns: auto;
     margin: 0;
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -400,7 +400,6 @@ nav:hover {
 }
 
 .ContactTitleSection{
-    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,20 +444,78 @@ nav:hover {
 
 .BottomPage{
     background-color: rgb(228, 228, 228);
-    margin-top: 10vh;
+    margin-top: 5vh;
+    animation: slideInFromBottom 3s ease;
 }
 
 .Contact2Part{
-    
+    animation: slideInFromBottom 3s ease;
     background-color: rgb(228, 228, 228);
     height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+}
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .Contact2PartL{
-    
+    margin-left: 10%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
 }
 
-/*                           https://www.youtube.com/watch?v=hlwlM4a5rxg                            */
+.ContactLTxt{
+    font-size: large;
+}
+
+.form{
+    width: 100%;
+}
+
+input, textarea{
+    all: unset;
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    padding-left: 25px;
+  }
+
+.input-box{
+    margin: 25px 0;
+}
+
+.inputName, .inputEmail{
+    height: 50px;
+    width: 100%;
+}
+
+
+.inputeMsg{
+    padding-top: 25px;
+    height: 150px;
+    width: 100%;
+}   
+
+button{
+    all: unset;
+    background-color: white;
+    height: 50px;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 40%;
+}
+
+button:hover{
+    
+    transition: all ease 1s;
+    background-color: rgb(236, 236, 236);
+}
