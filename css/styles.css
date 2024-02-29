@@ -451,7 +451,7 @@ nav:hover {
 .Contact2Part{
     animation: slideInFromBottom 3s ease;
     background-color: rgb(228, 228, 228);
-    height: 100vh;
+    margin-bottom: 200px;
     display: flex;
     flex-direction: row;
 }
@@ -515,7 +515,65 @@ button{
 }
 
 button:hover{
-    
     transition: all ease 1s;
     background-color: rgb(236, 236, 236);
+}
+
+.Contact2PartR{
+    margin-left: 10%;
+    width: 35%;
+    margin-right: 10%;
+}
+
+.ContactRInfo{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0;
+}
+.ContactImg{
+    object-fit: none;
+    margin: 0 40px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.contactRTxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.marginZero{
+    margin: 0;
+}
+
+.ContactRBottom{
+    border-top: 3px solid #7c7c7c;
+    display: flex;
+    justify-content: center;
+}
+
+.svglogo2{
+    margin: 50px 40px;
+    margin-bottom: 0;
+    fill: rgb(54, 54, 54);
+    animation: blbl 3s ease-in-out forwards;
+    transition: transform 0.2s ease;
+    height: 75px;
+    width: 75x;
+}
+
+.svglogo2:hover{
+    transform: translateY(-5px); 
+}
+
+.footerContact{
+    background-color: rgb(228, 228, 228);
+    border-top: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
 }

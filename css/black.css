@@ -97,3 +97,43 @@ nav:hover {
 .footerTxt:hover{
     color: white;
 }
+
+/*                                          Contact html page                                     */
+
+
+.contactRTxt , .ContactTitleSectionTitle , .ContactTitleSectionTxt , .ContactLTxt{
+    color: white;
+}
+
+.BottomPage, .footerContact , .Contact2Part{
+    background-color: rgb(24, 24, 24);
+}
+
+.custom-shape-divider-top-1708524440 .shape-fill {
+    fill: #121212;
+}
+
+.inputName , .inputEmail , .inputeMsg{
+    background-color: #121212;
+    color: white;
+}
+
+.btn{
+    background-color: #121212;
+    color: white;
+}
+.btn:hover{
+    background-color: #252525;
+}
+
+.svglogo2 {
+    fill: #ffffff;
+}
+
+.ContactRBottom{
+    border-top: 3px solid #292929;
+}
+.ContactImg{
+    opacity: 50%;
+    filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(263deg) brightness(104%) contrast(104%);
+}

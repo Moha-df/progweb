@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <script defer src="script.js"></script>
-    <title>Portfolio</title>
+    <?php include 'templates/head.php';?>
 </head>
 
 <body class="body">
@@ -14,7 +9,7 @@
     <div class="cursor-outline" data-cursor-outline></div>
     <header class="header">
         <nav class="MonNom">
-            De Franceschi Mohamed 
+            De Franceschi Mohamed
         </nav>
         <nav class="About" onclick="scrollToMiddle('about-section')">
             About
@@ -23,10 +18,10 @@
             Experience 
         </nav>
         <nav class="project">
-            Project 
+            Project
         </nav>
         <nav class="Contact">
-            <a href="contact.html">Contact</a>
+            <a href="contact.php">Contact</a>
         </nav>
         <div class="blackthem">
             <img class="Moon" id="Moon" src="img/darktem.png" alt="them" />
@@ -97,7 +92,6 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
             </p>
         </div>
-
     </section>
 
     <footer class="footer">
